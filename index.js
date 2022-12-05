@@ -20,9 +20,6 @@ const client = new MongoClient(uri, {
     serverApi: ServerApiVersion.v1
 });
 
-
-
-
 async function run() {
     try {
         //------
@@ -47,23 +44,12 @@ async function run() {
 run().catch(console.dir)
 
 
-
-
-
-
-
-
-
 // for get main routing and testing 
 app.get('/', (req, res) => {
     res.send('Server is Running')
 });
 
-
 // Server running port
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
-
-// contextUseReducer
-// YNHq0NSILz5wQoPf
